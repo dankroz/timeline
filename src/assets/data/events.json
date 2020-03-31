@@ -1,0 +1,82 @@
+{
+    "dates": [
+        {
+            "year": "100000 BBY",
+            "events": [
+                {
+                    "title": "Sith Considered Barbaric",
+                    "src": "https://pm1.narvii.com/6638/c5b9266147d6595ee2c941378ab37f84809d6cbf_hq.jpg"
+                }
+            ]
+        },
+        {
+            "year": "36453 BBY",
+            "events": [
+                {
+                    "title": "Infinite Empire Established",
+                    "dialog": "Kwa come from Dathomir and arrive on Lehon and teach Rakatans about technology and the Force.",
+                    "src": "https://pm1.narvii.com/6638/c5b9266147d6595ee2c941378ab37f84809d6cbf_hq.jpg"
+                },
+                {
+                    "title": "First Migration",
+                    "dialog": "Eight Tho Yor Pyramidal ships pick up many Force-sensitive beings and gather around the Ninth ship on Tython to spark an immense Force Storm. On Tython, the Je`daii Order was formed to keep the balance of the Light and Dark Sides of the Force."
+                }
+            ]
+        },
+        {
+            "year": "35000 BBY",
+            "events": [
+                {
+                    "title": "Star Forge Used",
+                    "dialog": "Star forge made over the star Abo in Lehon System used to expand to Unknown Regions and Western Galaxy"
+                }
+            ]
+        },
+        {
+            "year": "33598 BBY",
+            "events": [
+                {
+                    "title": "RIE Arrives on Kashyyyk",
+                    "dialog": "RIE installs terraforming computer on Kashyyyk  to manipulate Wroshyr trees"
+                }
+            ]
+        },
+        {
+            "year": "30000 BBY",
+            "events": [
+                {
+                    "title": "RIE Devolve Kwa",
+                    "dialog": "RIE devolve Kwa to Kwi lizards and bring rancors from Dathomir to Gamorr"
+                },
+                {
+                    "title": "Sith Drive off the Killiks",
+                    "dialog": "Sith Drive off the Killiks using revenge and hatred powers along with alchemy."
+                }
+            ]
+        },
+        {
+            "year": "28000 BBY",
+            "events": [
+                {
+                    "title": "Adas Becomes First Sith`ari",
+                    "dialog": "Adas begins his 300- year reign."
+                }
+            ]
+        },
+        {
+            "year": "27700 BBY",
+            "events": [
+                {
+                    "title": "RIE Discover Korriban",
+                    "dialog": "RIE discover Korriban and introduce Sith to holocron technology and the Dark Side. King Adas drives them away and dies. The Sith expand to surrounding systems using RIE technology"
+                },
+                {
+                    "title": "RIE Enslave Coruscanti"
+                }
+            ]
+        },
+        {
+            "year": "27500 BBY"
+        }
+    ]
+}
