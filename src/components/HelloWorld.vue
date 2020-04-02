@@ -14,7 +14,7 @@
               <v-tab-item v-for="event in events">
                   <v-card-subtitle id='dialogInfo'> {{event.dialog}}</v-card-subtitle>
               
-              </v-tab-item>
+              </v-tab-item> 
             </v-tabs>
           </v-card-text>
         </v-card>
