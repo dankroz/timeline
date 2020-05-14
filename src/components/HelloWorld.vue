@@ -36,6 +36,8 @@
 
 <script>
 import dates from '../assets/data/events.json'
+import axios from '../axios'
+
 export default {
   name: "HelloWorld",
   data () {
@@ -46,12 +48,11 @@ export default {
       events: [{ title: "Sith Considered Barbaric" }]
     };
   },
-  created(){
-
+  async created(){
+    axios.get('/events').then(res => console.log('res:: ',res))
   },
   methods: {
     updateDate(obj) {
-      console.log("chosen Date: ", this.chosenDate);
       this.events = this.dates[this.chosenDate].events
     }
   }
