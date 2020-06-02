@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container v-if="dates.length > 0">
     <v-layout class="top">
       <v-flex>
         <v-card dark>
@@ -8,7 +8,7 @@
           </v-card-title>
           <v-card-text>
             <v-tabs centered>
-              <v-tab v-for="event in events">
+              <v-tab v-for="event in dates[chosenDate].events">
                 {{event.title}}
               </v-tab>
               <v-tab-item v-for="event in events">
@@ -25,7 +25,7 @@
         dark
         v-model="chosenDate"
         :thumb-color="ex3.color"
-        :max="(dates.length -1)"
+        :max="Object.keys(dates).length - 1"
         tick-size="10"
         ticks="always"
         @click="updateDate"
@@ -44,16 +44,32 @@ export default {
     return {
       ex3: { label: "thumb-color", val: 50, color: "red" },
       chosenDate: 0,
-      dates: dates.dates,
+      dates: [],
       events: [{ title: "Sith Considered Barbaric" }]
     };
   },
-  async created(){
-    axios.get('/events').then(res => console.log('res:: ',res))
+  async mounted(){
+    await this.getEvents()
+    
   },
   methods: {
     updateDate(obj) {
       this.events = this.dates[this.chosenDate].events
+    },
+    async getEvents() {
+      const data = (await axios.get('/events')).data
+      data.map((e, index) => {
+        let dateSet = false
+        this.dates.map(date => {
+          if(date.year === e.Date.replace(/.{3}$/,' $&')) {
+            date.events.push({title: e.Title, dialog: e.Text})
+            dateSet = true
+          }
+        })
+        if(!dateSet) this.dates.push({year: e.Date.replace(/.{3}$/,' $&'), events: [{title: e.Title, dialog: e.Text}]})
+      })
+      this.events = this.dates[0].events
+
     }
   }
 };
