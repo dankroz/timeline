@@ -35,8 +35,7 @@
 </template>
 
 <script>
-import dates from '../assets/data/events.json'
-import axios from '../axios'
+import axios from '../../axios'
 
 export default {
   name: "HelloWorld",
@@ -75,9 +74,6 @@ export default {
 };
 </script>
 <style scoped>
-.top {
-  margin-top: -45rem;
-}
 .large-slider {
   margin-top: 10rem;
 }

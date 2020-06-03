@@ -21,10 +21,11 @@
           hoverMode="grab"
           :clickEffect="true"
           clickMode="push"
+          z-index="0"
         >
         </vue-particles>
         
-        <router-view :key="$route.path" />
+        <router-view style="margin-top: -45rem;" :key="$route.path" />
       </div>
          
     </v-content>
@@ -52,5 +53,6 @@ export default {
   background-image: url('https://vignette.wikia.nocookie.net/starwars/images/b/b9/Hos.png/revision/latest?cb=20171113015859');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 </style>
